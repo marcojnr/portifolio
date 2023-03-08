@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 
 *{
     margin: 0;
@@ -6,21 +7,19 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: "Pppins", sans-serif;
-}
+    font-family: "Poppins", sans-serif;
+} 
 
-body{
-    overflow: hidden;
-}
 
-.background{
+.background-home{
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
-    /*background-image: url(banner\ linkdin.png);    --ADICIONAR MINHA IMAGEM AQUI */
+     background-image: url(banner\ linkdin.png);    /*--ADICIONAR MINHA IMAGEM AQUI */
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100vh;
 }
+
 
 header{
     display: flex;
@@ -47,19 +46,18 @@ header{
     color: #2ecc71;
     transition: 0.3s all;
 }
-
-.Logo{
-    height: 40px;
-    width: 40px;
-    background: transparent;
-    border: 1px solid #2ecc71;
-    color: #2ecc71;
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 13px;
+.Logo h2{
+    color: white;
+    font-family: 'Rampart One';
+    font-size: 25px;
     cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.Logo span{
+    color:  #2ecc71;
+    font-family: 'Rampart One';
+
 }
 
 button{
@@ -102,6 +100,7 @@ button:hover{
     font-size: 15px;
     font-weight: 300;
     margin-top: 10px;
+    letter-spacing: 1px;
 }
 
 .redes-sociais a{
@@ -114,3 +113,60 @@ button:hover{
 .btn{
     margin-top: 10px;
 }
+
+.background-color-sobre{
+    background-color:  #2ecc71;
+    /* background-size: cover;
+    background-position: center; */
+    width: 100%;
+    height: 90vh;
+}
+
+.background-color-sobre img{
+    width: 430px;
+    height: auto;
+}
+
+.text-sobre{
+    width: 550px;
+}
+
+.main-sobre{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1130px;
+    margin: 0 auto;
+}
+
+.main-sobre img{
+    border-radius: 2%;
+    /* border-style: dashed; */
+}
+
+.text-sobre h2{
+    color: black;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.main-sobre span{
+    color: #921010;
+    margin-left: 5px;
+}
+
+.text-sobre h5{
+    color: black;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.text-sobre p{
+    color: black;
+    letter-spacing: 1px;
+}
+
