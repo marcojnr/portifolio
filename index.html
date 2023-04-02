@@ -4,64 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="background-home">
-        <header>
-            <div class="Logo">
-                <h2>Portfo<span>lio</span></h2>
-            </div>
-            <div class="cabecalho-link"> 
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Sobre</a>
-                </li>
-                <li>
-                    <a href="#">Serviços</a>
-                </li>
-                <li>
-                    <a href="#">Trabalho</a>
-                </li>
-                <button>Meu contato</button>
-            </div>
-        </header>
+    <header class="header">
+        <a href="#" class="logo">Portfo<span>lio</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
 
-        <div class="container-text">
-            <div class="text">
-                <h3>Olá, Pessoal</h3>
-                <h1>Eu sou <span>Marco Júnior</span> </h1>
-                <p>Esse é meu portfolio onde fala um pouco sobre mim, <br> com alguns projetos, skills e certificados.</p>
-                     <br>
-            <div class="redes-sociais">
-                <a href="https://www.linkedin.com/in/marco-batista-118828187/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/marcojnr" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <nav class="navbar">
+            <a href="#home" class="ativo">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Olá, Pessoal</h3>
+            <h1>Eu sou <span>Marco Júnior</span> </h1>
+            <p>Esse é meu portfolio onde fala um pouco sobre mim, com alguns projetos, skills e certificados.</p>
+        
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/marco-batista-118828187/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/marcojnr" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
             </div>
-                <button class="btn">Sobre Mim</button>
-            </div>
+            <a href="#" class="bnt">Download CV</a>
         </div>
-    </div>
-    <div class="background-color-sobre">
-        <div class="main-sobre">
-            <img src="eu_fundo_verde.png">
-            <div class="text-sobre">
-                <h2>Sobre Mim</h2>
-                <h5>Analista   <span>& Desenvolvedor</span></h5>
-                <p>Analista de dados, com experiência em alguns projetos por onde trabalhei, especialmente na área de BI, aplicando-se tecnologias essenciais para tomada de decisão. <span>Trabalhando atualmente como Analista de BI Jr na Impacta LawTech.</span></p>
-                <br>
-                <p><span>Estudante de Engenharia da Computação</span>. Procurando evoluir cada vez mais na área e buscando conhecimento em novas tecnologias. Embora nunca ter atuado, busco conhecimentos também na área de 
-                desenvolvedor de software.</p>
-                <br>
-                <p></p>Apaixonado por tecnologia, nas horas vagas procuro passar o tempo com games.
-                </p>
-                <!-- <button class="vamos-conversar">Vamos conversar</button> -->
-            </div>
+        <div class="home-img">
+            <img src="img/home.png" alt="">
+
         </div>
-    </div>
+    </section>
+
+
+
+    <section class="sobre", id="sobre">
+        <div class="sobre-img">
+            <img src="img/home.png" alt="">
+        </div>
+        <div class="sobre-content">
+            <h2 class="heading">Sobre Mim</h2>
+            <h3>Analista de BI  <span>& Desenvolvedor</span></h5>
+            <p>Analista de dados, com experiência em alguns projetos por onde trabalhei, especialmente na área de BI, aplicando-se tecnologias essenciais para tomada de decisão. <span>Trabalhando atualmente como Analista de BI Jr na Impacta LawTech.</span></p>
+            <!-- <br> -->
+            <p><span>Estudante de Engenharia da Computação</span>. Procurando evoluir cada vez mais na área e buscando conhecimento em novas tecnologias. Embora nunca ter atuado, busco conhecimentos também na área de 
+            desenvolvedor de software.</p>
+            <!-- <br> -->
+            <p>Apaixonado por tecnologia, nas horas vagas procuro passar o tempo com games</p>
+            
+            <a href="#" class="bnt">Ler Mais</a>
+        </div>
+    </section>
+
 </body>
 </html>
