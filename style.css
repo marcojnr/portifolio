@@ -40,7 +40,7 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 1% 10%;
     background: var(--bg-color);
     display: flex;
     justify-content: space-between;
@@ -49,21 +49,22 @@ section {
 }
 
 .logo {
-    font-size: 25px;
+    font-size: 2.2rem;
     color: var(--text-color);
     font-weight: 600;
     cursor: default;
 }
 
 .navbar a {
-    font-size: 13px;
-    color: var(--text-color);
-    margin-left: 40px;
+    /* font-size: 2vh; */
+    font-size: clamp(1.8vh, 1vw, 1.8vw);
+    color: var(--main-color);
+    margin-left: 2rem;
     transition: .4s;
 }
 
-.navbar a:hover, .navbar a.ativo {
-    color: var(--main-color);
+.navbar a:hover, .navbar{
+    color: var(--text-color);
 }
 
 
@@ -338,18 +339,27 @@ img {
     margin-bottom: 50px;
 }
 
+
+
+
 .rodape {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     padding: 2rem 9%;
     background: var(--second-bg-color);
+   
 }
 
-.rodape-text P{
+.rodape p{
     font-family: Verdana;
     font-size: 12px;
+}   
+
+.text2 {
+    margin-left: 30vw;
 }
 
 .rodape-iconTop a{
@@ -365,3 +375,4 @@ img {
     font-size: 25px;
     color: var(--second-bg-color);
 }
+
