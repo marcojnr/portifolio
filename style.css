@@ -190,57 +190,64 @@ img {
 
 /* ----------------------  SOBRE MIM ---------------- */
 
-.sobre {
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    background: var(--second-bg-color);
-    /* position: relative; */
-    /* justify-content: space-between; */
-}
-
-.sobre-img img{
-    width: 35vw;
-    margin-right: 20%;
-    margin-top: 2%;
-}
-
 .heading {
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     letter-spacing: 3px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
-.sobre-content h2{
-    text-align: left;
-    line-height: 1.2;
-    margin-top: 2%;
+.about {
+    background-color: var(--second-bg-color);
+    position: relative;
+    
 }
 
-.sobre-content h3{
+.conteiner-pai {
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 auto;
+    
+}
+
+.sobre-imagem {
+    flex: 1 1 300px;
+    border: solid black;
+}
+
+.sobre-texto {
+    border: solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    flex: 1 1 468px;
+    
+}
+
+
+.sobre-texto h3{
     text-align: left;
     line-height: 1.2;
-    margin-top: 16px;
-    font-size: 18px;
+    font-size: 21px;
 }
 
 .span-menor {
-    font-size: 15px;
+    font-size: 16px;
     color: var(--text-color);
 }
 
-.sobre-content p{
-    font-size: 15px;
-    margin: 12px 0 12px;
+.sobre-texto  p{
+    font-size: 14px;
 }
-
 
 
 
 /* parte de servicos que pulei */
+
 
 .portfolio {
     background: var(--second-bg-color);
